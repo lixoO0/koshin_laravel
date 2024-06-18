@@ -8,6 +8,10 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class BlogPost extends Model
 {
     use SoftDeletes;
+    const UNKNOWN_USER = 1;
+
+    в масиві  protected $fillable видаляємо
+    'user_id',
     protected $fillable
             = [
                 'title',
