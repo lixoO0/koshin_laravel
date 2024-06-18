@@ -51,3 +51,8 @@
     @endif
 </div>
 @endsection
+<td>{{ $post->user_id }}</td>
+<td>{{ $post->category_id }}</td>
+замінюємо на
+<td>{{ $post->user->name }}</td>    {{-- виводимо ім'я користувача і назву категорії зі зв'язаних таблиць --}}
+<td>{{ $post->category->title }}</td>
