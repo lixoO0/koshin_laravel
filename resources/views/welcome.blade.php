@@ -5,7 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Laravel</title>
-
+ <table>
+        @foreach ($items as $item)
+            <tr>
+                <td>{{$item->id}}</td>
+                <td>{{$item->title}}</td>
+                <td>{{$item->created_at}}</td>
+            </tr>
+        @endforeach
+    </table>
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
